@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- jquery for the CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <title>Giphy Assignment</title>
+
+    <style>
+        .card {
+            display: inline-block;
+             margin: 10px 25px;
+            border: 3px solid #73AD21;
+            vertical-align: top;
+        }
+
+        .container {
+            background:lightgreen;
+        }
+
+        h3 {
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Content here -->
+        <div class="jumbotron">
+            <!-- jumbotron page heading-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-header">
+                        <h1>Movies, Cartoons and anything you can think of Giphy's </h1>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div class="btn-group" role="group" aria-label="Basic example">
+            </div>
+            <br>
+            <hr>
+
+            <form class="form-inline">
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputAnimal" class="sr-only">Password</label>
+                    <input class="form-control" id="inputAnimal" placeholder="Enter Animal">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2" id="add-animal">Submit Animal</button>
+            </form>
+        </div>
+
+
+        <!-- container  for Giphyes -->
+        <div class="gipheys card-group row">  
+        </div>
+
+    </div>
+
+
+    <script src="assets/javascript/animal.js"></script>
+    <script src="assets/javascript/giphy.js"></script>
+</body>
+
+</html>
